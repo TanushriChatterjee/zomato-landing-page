@@ -158,6 +158,61 @@ body {
   height:100%;
 }
 
+.email__subscribe__container {
+    width:100%;
+    margin-top: 50px;
+    padding:15px;
+}
+
+.email__subscribe__input__field {
+    display:flex;
+    gap:10px;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.email__input::placeholder {
+    color: #bdbcbc;
+  }
+
+.email__input {
+    padding:7px;
+    border:1px solid #ee89a0;
+    background-color: #fcedf0;
+    color: #1d3557;
+    border-radius: 4px;
+}
+
+.quote__container {
+    margin-top: 60px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:200px;
+    border-radius: 13px;
+    background: url("assets/quoteimage.jpg") center center / cover no-repeat;
+}
+
+.quote__image{
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    border-radius: 13px;
+    background-color: #0a4065;
+    opacity: 49%;
+  }
+
+.quote__image__text {
+    width:100%;
+    color:#fff;
+    font-size:18px;
+    text-align: center;
+    z-index: 3;
+    margin: 0 1rem;
+}
+
 @media (min-width:768px) {
     .navbar {
         justify-content: space-between;
@@ -220,6 +275,30 @@ body {
         width:100%;
         font-size: 40px;
     }
+
+    .email__subscribe__container {
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .email__input {
+        width:330px;
+    }  
+
+    .quote__container {
+        height: 250px;
+        width: 100%;
+      }
+
+    .quote__image{
+        height: 250px;
+        width: 100%;
+    }
+    
+    .quote__image__text {
+        font-size: 25px;
+    }
 }
 
 @media (min-width:1020px) {
@@ -247,6 +326,10 @@ body {
     .restaurant__text {
         width:100%;
         font-size: 50px;
+    }  
+    
+    .email__subscribe__text {
+        font-size: 45px;
     }
 }
 
