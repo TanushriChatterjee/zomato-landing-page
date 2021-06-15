@@ -16,13 +16,21 @@ body {
       #dd2476 51%,
       #ff512f 100%
     );
-    color: #fff;
-    border: none;
-    padding: 12px;
-    border-radius: 6px;
-    cursor: pointer;
+  }
+  .button__primary {
+    margin: 10px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 4px;
+    
   }
   
+.button__primary:hover {
+    color: #fff;
+  }
 
 
 
@@ -75,30 +83,30 @@ body {
     margin-top: 1rem;
   }
   
-
 .hero__image__container {
-    position:relative;
-    width:100%;
-}
-
-.hero__shape__image {
-    position:absolute;
-    right:2;
-}
-
+    position: relative;
+    width: 100%;
+  }
+  
+.hero__image__shape {
+    position: absolute;
+  }
+  
 .hero__image {
-    width:100%;
-    right:auto;
-    left:auto;
-    z-index:2;
-    border-radius: 8px;
-    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
-}
-
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    border-radius: 6px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+  
 .hero__text {
-    font-size: 30px;
-    margin:20px 0;
-}
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    color: #1d3557;
+    font-weight: 900;
+  }
+  
 
 .explore__menu__text {
     font-size: 30px;
@@ -267,12 +275,14 @@ footer ul li {
     }
 
     .hero__container {
-        margin-top: 20px;
-        display:flex;
+        display: flex;
         flex-direction: row-reverse;
         align-items: center;
-    }
+      }
     
+    .hero__image {
+        margin-top: 2rem;
+      }
     .explore__menu__lists {
         margin-top: 40px;
         display: flex;
@@ -351,7 +361,7 @@ footer ul li {
 
 @media (min-width:1020px) {
     .container {
-        max-width:900px;
+        max-width:1140px;
     }
     .navbar {
         height:70px;
@@ -360,18 +370,19 @@ footer ul li {
     .navbar__brand {
         width:100px;
     }
+    
     .button__primary {
-        padding:10px;
-        width:150px;
-        height:50px;
-        font-size:20px;
-    }
+        padding: 1rem 2rem;
+        font-size: 1rem;
+      }
+    
     .hero__description {
         width:100%;
     }
     .hero__text {
-        font-size: 60px;
-    }
+        font-size: 3rem;
+        line-height: 1;
+      }
 
     .explore__menu__lists {
         gap:40px;
